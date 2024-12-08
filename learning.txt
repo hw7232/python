@@ -1,0 +1,77 @@
+model_RNN = Sequential([
+    SimpleRNN(5,input_shape=(x_dim,x_time)),
+    Dense(1,activation='linear')
+])
+model_RNN.compile(optimizer='adam',loss='mse')
+model_RNN.fit(xTrainR,yTrain,epochs=100,batch_size=1)
+=== training process
+{"Epoch":1,"running_time":10.259,"loss":18.0370,"auc":0.5507,"val_loss":2.1576,"val_auc":0.6718}
+{"Epoch":2,"running_time":9.265,"loss":2.0833,"auc":0.7121,"val_loss":1.9061,"val_auc":0.7761}
+{"Epoch":3,"running_time":10.284,"loss":1.8932,"auc":0.7792,"val_loss":1.7662,"val_auc":0.8179}
+{"Epoch":4,"running_time":9.267,"loss":1.7649,"auc":0.8134,"val_loss":1.6548,"val_auc":0.8444}
+{"Epoch":5,"running_time":9.269,"loss":1.6435,"auc":0.8410,"val_loss":1.5671,"val_auc":0.8624}
+{"Epoch":6,"running_time":10.285,"loss":1.5706,"auc":0.8561,"val_loss":1.4988,"val_auc":0.8771}
+{"Epoch":7,"running_time":9.268,"loss":1.5178,"auc":0.8665,"val_loss":1.4480,"val_auc":0.8841}
+{"Epoch":8,"running_time":9.271,"loss":1.4901,"auc":0.8717,"val_loss":1.5000,"val_auc":0.8769}
+{"Epoch":9,"running_time":10.282,"loss":1.4656,"auc":0.8761,"val_loss":1.4118,"val_auc":0.8922}
+{"Epoch":10,"running_time":11.302,"loss":1.3956,"auc":0.8883,"val_loss":1.3710,"val_auc":0.8966}
+{"Epoch":11,"running_time":10.287,"loss":1.3717,"auc":0.8922,"val_loss":1.4389,"val_auc":0.8819}
+{"Epoch":12,"running_time":10.297,"loss":1.3517,"auc":0.8957,"val_loss":1.3227,"val_auc":0.9050}
+{"Epoch":13,"running_time":10.275,"loss":1.3000,"auc":0.9037,"val_loss":1.3048,"val_auc":0.9085}
+{"Epoch":14,"running_time":10.287,"loss":1.2772,"auc":0.9069,"val_loss":1.2770,"val_auc":0.9109}
+{"Epoch":15,"running_time":10.281,"loss":1.2443,"auc":0.9118,"val_loss":1.2678,"val_auc":0.9114}
+{"Epoch":16,"running_time":10.294,"loss":1.2104,"auc":0.9167,"val_loss":1.2597,"val_auc":0.9125}
+{"Epoch":17,"running_time":10.292,"loss":1.2000,"auc":0.9180,"val_loss":1.2298,"val_auc":0.9175}
+{"Epoch":18,"running_time":10.296,"loss":1.1666,"auc":0.9225,"val_loss":1.2109,"val_auc":0.9191}
+{"Epoch":19,"running_time":10.295,"loss":1.1248,"auc":0.9280,"val_loss":1.2072,"val_auc":0.9198}
+{"Epoch":20,"running_time":10.279,"loss":1.1142,"auc":0.9293,"val_loss":1.2050,"val_auc":0.9197}
+{"Epoch":21,"running_time":10.288,"loss":1.0985,"auc":0.9312,"val_loss":1.1802,"val_auc":0.9224}
+{"Epoch":22,"running_time":10.286,"loss":1.0597,"auc":0.9362,"val_loss":1.1484,"val_auc":0.9262}
+{"Epoch":23,"running_time":10.282,"loss":1.0426,"auc":0.9382,"val_loss":1.1587,"val_auc":0.9252}
+{"Epoch":24,"running_time":10.301,"loss":1.0235,"auc":0.9403,"val_loss":1.1573,"val_auc":0.9249}
+{"Epoch":25,"running_time":10.278,"loss":0.9964,"auc":0.9435,"val_loss":1.1321,"val_auc":0.9284}
+{"Epoch":26,"running_time":10.294,"loss":0.9898,"auc":0.9441,"val_loss":1.1521,"val_auc":0.9260}
+{"Epoch":27,"running_time":10.277,"loss":0.9629,"auc":0.9472,"val_loss":1.1268,"val_auc":0.9282}
+{"Epoch":28,"running_time":10.283,"loss":0.9661,"auc":0.9468,"val_loss":1.1471,"val_auc":0.9257}
+{"Epoch":29,"running_time":10.284,"loss":0.9551,"auc":0.9479,"val_loss":1.1096,"val_auc":0.9303}
+{"Epoch":30,"running_time":10.278,"loss":0.9294,"auc":0.9507,"val_loss":1.1137,"val_auc":0.9291}
+{"Epoch":31,"running_time":10.287,"loss":0.9054,"auc":0.9530,"val_loss":1.1191,"val_auc":0.9290}
+{"Epoch":32,"running_time":9.270,"loss":0.8895,"auc":0.9546,"val_loss":1.1051,"val_auc":0.9302}
+{"Epoch":33,"running_time":10.283,"loss":0.8754,"auc":0.9562,"val_loss":1.0983,"val_auc":0.9311}
+{"Epoch":34,"running_time":9.267,"loss":0.8628,"auc":0.9570,"val_loss":1.1054,"val_auc":0.9305}
+{"Epoch":35,"running_time":10.280,"loss":0.8431,"auc":0.9591,"val_loss":1.0778,"val_auc":0.9337}
+{"Epoch":36,"running_time":10.276,"loss":0.8207,"auc":0.9610,"val_loss":1.0785,"val_auc":0.9334}
+{"Epoch":37,"running_time":10.274,"loss":0.8081,"auc":0.9621,"val_loss":1.0864,"val_auc":0.9326}
+{"Epoch":38,"running_time":10.283,"loss":0.8087,"auc":0.9622,"val_loss":1.0793,"val_auc":0.9333}
+{"Epoch":39,"running_time":10.278,"loss":0.7932,"auc":0.9635,"val_loss":1.0639,"val_auc":0.9352}
+{"Epoch":40,"running_time":9.270,"loss":0.7684,"auc":0.9658,"val_loss":1.0733,"val_auc":0.9342}
+{"Epoch":41,"running_time":10.283,"loss":0.7593,"auc":0.9666,"val_loss":1.0819,"val_auc":0.9329}
+{"Epoch":42,"running_time":9.269,"loss":0.7432,"auc":0.9678,"val_loss":1.0691,"val_auc":0.9345}
+{"Epoch":43,"running_time":10.279,"loss":0.7342,"auc":0.9686,"val_loss":1.0778,"val_auc":0.9335}
+{"Epoch":44,"running_time":9.271,"loss":0.7119,"auc":0.9703,"val_loss":1.0680,"val_auc":0.9349}
+{"Epoch":45,"running_time":9.267,"loss":0.7103,"auc":0.9705,"val_loss":1.0707,"val_auc":0.9343}
+{"Epoch":46,"running_time":10.282,"loss":0.7162,"auc":0.9701,"val_loss":1.0968,"val_auc":0.9314}
+{"Epoch":47,"running_time":9.266,"loss":0.7029,"auc":0.9710,"val_loss":1.0784,"val_auc":0.9336}
+{"Epoch":48,"running_time":10.281,"loss":0.6834,"auc":0.9725,"val_loss":1.0736,"val_auc":0.9341}
+{"Epoch":49,"running_time":9.267,"loss":0.6637,"auc":0.9741,"val_loss":1.0963,"val_auc":0.9317}
+{"Epoch":50,"running_time":10.282,"loss":0.6683,"auc":0.9736,"val_loss":1.0727,"val_auc":0.9347}
+=== process termination
+yTrain_pred = model_RNN.predict(xTrainR)
+yTest_pred = model_RNN.predict(xTestR)
+yTrain_pred_inverse = sc.inverse_transform(yTrain_pred)
+yTest_pred_inverse = sc.inverse_transform(yTest_pred)
+train_s = x_time
+train_e = train_s + len(yTrain_pred_inverse)
+test_s = train_e + x_time
+test_e = test_s + len(yTest_pred_inverse)
+train_index = np.arange(train_s,train_e)
+test_index = np.arange(test_s,test_e)
+plt.figure(figsize=(4,3))
+plt.plot(corona_data,linewidth=5,alpha=0.4,color='gray',
+         label='confirmed')
+plt.plot(train_index,yTrain_pred_inverse,linewidth=2,color='blue',
+         label='train prediction')
+plt.plot(test_index,yTest_pred_inverse,linewidth=2,color='red',
+         label='test prediction')
+plt.legend()
+plt.grid()
